@@ -32,7 +32,7 @@ contains all 16 features plus the target, as required by the app.
 **Repository:** Replace this placeholder with the public repository URL after
 creating it on GitHub:
 
-`https://github.com/<YOUR-USERNAME>/<YOUR-REPOSITORY>`
+`https://github.com/Bhavya1432004/ML-Model-Evaluation.git`
 
 The repository should contain the complete project files shown below.
 
