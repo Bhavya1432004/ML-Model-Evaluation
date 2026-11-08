@@ -8,7 +8,7 @@ train/test split is used for every model. Preprocessing is fitted on training
 data only, and the saved pipelines are used to evaluate test data without
 retraining.
 
-## b. Dataset description — 1 mark
+## b. Dataset description
 
 - **Dataset:** Bank Marketing (`bank-full.csv`)
 - **Source:** [UCI Machine Learning Repository — Bank Marketing](https://archive.ics.uci.edu/dataset/222/bank+marketing)
@@ -27,7 +27,7 @@ The original CSV is semicolon-delimited. `train_models.py` reads it with the
 appropriate delimiter. The generated `test_data.csv` is comma-delimited and
 contains all 16 features plus the target, as required by the app.
 
-## c. GitHub Repository Link — 1 mark
+## c. GitHub Repository Link
 
 **Repository:** Replace this placeholder with the public repository URL after
 creating it on GitHub:
@@ -36,7 +36,7 @@ creating it on GitHub:
 
 The repository should contain the complete project files shown below.
 
-## d. Models used and results — 5 marks
+## d. Models used and results
 
 All metrics below were calculated on the same held-out test split. Precision,
 recall, and F1 use `yes` as the positive class. AUC is binary ROC AUC using the
@@ -50,7 +50,7 @@ model's positive-class probability or decision score.
 | Naive Bayes (Gaussian) | 0.854805 | 0.810095 | 0.405904 | 0.519849 | 0.455864 | 0.377358 |
 | Support Vector Machine | 0.900144 | 0.907201 | 0.660455 | 0.301512 | 0.414017 | 0.401639 |
 
-### Observations — 3 marks
+### Observations
 
 | ML Model Name | Observation about model performance |
 |---|---|
@@ -107,25 +107,3 @@ python train_models.py
 5. After deployment, open the live URL and upload `test_data.csv`. Confirm the
    comparison metrics, model dropdown, confusion matrix, and classification
    report all work.
-
-## Project files
-
-```text
-bank_marketing_assignment/
-├── app.py
-├── requirements.txt
-├── README.md
-├── train_models.py
-├── test_data.csv
-├── model_metrics.csv
-├── Data/
-│   └── bank/
-│       └── bank-full.csv
-└── model/
-    ├── decision_tree.joblib
-    ├── gaussian_nb.joblib
-    ├── knn.joblib
-    ├── logistic_regression.joblib
-    ├── metadata.json
-    └── support_vector_machine.joblib
-```
