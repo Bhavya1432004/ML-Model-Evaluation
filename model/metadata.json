@@ -1,0 +1,31 @@
+{
+  "target_column": "y",
+  "positive_label": "yes",
+  "input_features": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "balance",
+    "housing",
+    "loan",
+    "contact",
+    "day",
+    "month",
+    "duration",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome"
+  ],
+  "test_size": 0.2,
+  "random_state": 42,
+  "models": {
+    "Logistic Regression": "model\\logistic_regression.joblib",
+    "Decision Tree": "model\\decision_tree.joblib",
+    "K-Nearest Neighbors": "model\\knn.joblib",
+    "Gaussian Naive Bayes": "model\\gaussian_nb.joblib",
+    "Support Vector Machine": "model\\support_vector_machine.joblib"
+  }
+}
